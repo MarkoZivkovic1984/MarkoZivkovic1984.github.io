@@ -184,31 +184,23 @@ document.querySelectorAll('.job-link').forEach(link => {
 </script>
 <script>
 const navLinks = document.querySelectorAll("a[href^='#']");
-const sections = ["about", "skills", "experience"].map(id => document.getElementById(id));
 
-function setActiveNav() {
-  let current = "";
+navLinks.forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
 
-  sections.forEach(section => {
-    if (!section) return;
+    navLinks.forEach(l => l.classList.remove("active-nav"));
+    link.classList.add("active-nav");
 
-    const top = section.getBoundingClientRect().top;
+    const target = document.querySelector(link.getAttribute("href"));
 
-    if (top <= 200) {
-      current = section.id;
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
     }
   });
-
-  navLinks.forEach(link => {
-    link.classList.remove("active-nav");
-
-    if (link.getAttribute("href") === "#" + current) {
-      link.classList.add("active-nav");
-    }
-  });
-}
-
-window.addEventListener("scroll", setActiveNav);
-window.addEventListener("load", setActiveNav);
+});
 </script>
 </body>
