@@ -182,4 +182,30 @@ document.querySelectorAll('.job-link').forEach(link => {
   });
 });
 </script>
+<script>
+const navLinks = document.querySelectorAll("a[href^='#']");
+
+function setActiveNav() {
+  let current = "";
+
+  document.querySelectorAll("[id]").forEach(section => {
+    const rect = section.getBoundingClientRect();
+
+    if (rect.top <= 150 && rect.bottom >= 150) {
+      current = section.id;
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active-nav");
+
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active-nav");
+    }
+  });
+}
+
+window.addEventListener("scroll", setActiveNav);
+window.addEventListener("load", setActiveNav);
+</script>
 </body>
