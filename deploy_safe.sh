@@ -18,6 +18,7 @@ git add .
 git commit -m "Deploy static build"
 
 # 5️⃣ Push na GitHub bez forsiranja
+git pull origin main --rebase
 git push origin main
 
 echo "Safe deploy complete! Your site should be live."
