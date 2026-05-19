@@ -304,6 +304,13 @@ a:hover {
   text-align: left;
   white-space: nowrap;
 }
+a.active-nav {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
 
 
 @media screen and (max-width: 768px) {
