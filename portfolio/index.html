@@ -184,12 +184,14 @@ document.querySelectorAll('.job-link').forEach(link => {
 </script>
 <script>
 const navLinks = document.querySelectorAll("a[href^='#']");
-const sections = document.querySelectorAll("#about, #skills, #experience");
+const sections = ["about", "skills", "experience"].map(id => document.getElementById(id));
 
 function setActiveNav() {
   let current = "";
 
   sections.forEach(section => {
+    if (!section) return;
+
     const top = section.getBoundingClientRect().top;
 
     if (top <= 200) {
