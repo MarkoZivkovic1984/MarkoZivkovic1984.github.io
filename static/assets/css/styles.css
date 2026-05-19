@@ -1,0 +1,333 @@
+body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #66BFBF;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+a{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+.top-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                    url('/static/images/background.jpg');
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 20px; /* Malo veći razmak gore i dole */
+  position: relative;
+  min-height: 400px;
+}
+.img-class {
+    max-width: 100%;
+    height: 500px;
+}
+.middle-container {
+  margin: 100px 0;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.code-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+.courses-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: center;
+}
+.skill {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: center;
+}
+.courses {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: center;
+}
+.profile {
+  width: 100%;
+  margin: 100px auto 100px auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  }
+.interest {
+  margin: 100px auto 100px auto;
+  text-align: center;}
+}
+.job-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-align; center;
+}
+
+.job-link:hover {
+  text-decoration: underline;
+}
+
+.job-card {
+  display: none;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  width 90%;
+  max-width: 650px;
+  margin: 20px;
+  border-left: 4px solid #17a2b8;
+  margin: 0 auto;
+}
+
+
+.job-card.active {
+  display: block !important;
+}
+.job-card h3 {
+  text-align: center;
+  color: #17a2b8;
+  margin-bottom: 20px;
+}
+.job-card ul {
+  display: table;
+  margin: 0 auto;
+  padding-left: 20px;
+  text-align: left;
+}
+.job-card li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #555555;
+}
+
+
+ .skills-container {
+  max-width: 650px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.skills-title {
+  color: #17a2b8;
+  margin-bottom: 20px;
+}
+
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.skill-tag {
+  background-color: #f1f3f5;
+  color: #495057;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #dee2e6;
+  transition: all 0.2s ease;
+}
+
+
+.skill-tag:hover {
+  background-color: #17a2b8;
+  color: white;
+  border-color: #17a2b8;
+}
+
+.header-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.header-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #17a2b8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.positions-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto 30px auto;
+  }
+.position-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 580px;
+  margin-bottom: 15px;
+}
+.position-row :nth-child(1) {
+  width: 160px;
+  flex-shrink: 0;
+  color: #666666;
+  text-align: left;
+}
+
+.position-row :nth-child(2) {
+  text-align: left;
+  white-space: nowrap;
+}
+
+
+@media screen and (max-width: 768px) {
+  .position-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+@media screen and (max-width: 600px) {
+  .position-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .position-row .date {
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  .position-row .job-link {
+    text-align: center;
+    white-space: normal;
+  }
+}
