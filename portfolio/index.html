@@ -189,9 +189,9 @@ function setActiveNav() {
   let current = "";
 
   document.querySelectorAll("[id]").forEach(section => {
-    const rect = section.getBoundingClientRect();
+    const top = section.getBoundingClientRect().top;
 
-    if (rect.top <= 150 && rect.bottom >= 150) {
+    if (top <= 200) {
       current = section.id;
     }
   });
