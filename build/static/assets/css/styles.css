@@ -59,6 +59,7 @@ a:hover {
   padding: 120px 20px; /* Malo veći razmak gore i dole */
   position: relative;
   min-height: 400px;
+  color: #66BFBF;
 }
 .top-container h1,
 .top-container p {
