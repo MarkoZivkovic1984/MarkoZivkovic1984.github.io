@@ -12,10 +12,11 @@ def home(name=None):
 
 @app.route("/portfolio/")
 def portfolio(name=None):
-    return render_template('portfolio.html', name=name)
+    return render_template('new_portfolio.html', name=name)
 
 
 if __name__ == "__main__":
     freezer.freeze()
+
 
 

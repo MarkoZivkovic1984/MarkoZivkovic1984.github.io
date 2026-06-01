@@ -1,0 +1,44 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+video {
+  max-width: 650px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* EXPERIENCE */
+.positions-list {
+  padding: 20px;
+}
+
+.position-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #222;
+}
+
+.video-card {
+  display: none;
+}
+
+.video-card.active {
+  display: block;
+}
+
+.footer {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px 0;
+}
