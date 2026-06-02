@@ -11,6 +11,11 @@
 </head>
 
 <body>
+<div class="navbar">
+    <button class="nav-btn active" data-target="projects">Projects</button>
+    <button class="nav-btn" data-target="experience">Experience</button>
+    <button class="nav-btn" data-target="skills">Skills</button>
+</div>
 
 <!-- HERO -->
 <div class="top-container">
@@ -18,35 +23,26 @@
     <p>Junior Python Developer • DevOps • Linux Systems</p>
 </div>
 
-<!-- PROJECTS (MOST IMPORTANT SECTION) -->
-<section>
+
+<section id="projects" class="tab active">
     <h2>Projects</h2>
     <div class="positions-list">
 
         <div class="position-row">
             <a href="#" class="job-link" data-target="blog"
-               style="text-align: center;
-                color: #17a2b8;
-                margin-bottom: 20px;"
             >Blog Platform</a>
         </div>
 
         <div class="position-row">
-            <a href="#" class="job-link" data-target="home" style="text-align: center;
-                color: #17a2b8;
-                margin-bottom: 20px;">Home Assistant</a>
+            <a href="#" class="job-link" data-target="home">Home Assistant</a>
         </div>
 
         <div class="position-row">
-            <a href="#" class="job-link" data-target="viz" style="text-align: center;
-                color: #17a2b8;
-                margin-bottom: 20px;">Visualizer</a>
+            <a href="#" class="job-link" data-target="viz">Visualizer</a>
         </div>
 
         <div class="position-row">
-            <a href="#" class="job-link" data-target="dash" style="text-align: center;
-                color: #17a2b8;
-                margin-bottom: 20px;">Dashboard</a>
+            <a href="#" class="job-link" data-target="dash">Dashboard</a>
         </div>
 
         <!-- ONLY ONE ACTIVE VIDEO SHOWN -->
@@ -54,27 +50,52 @@
             <video controls>
                 <source src="/static/videos/Blog-Website.mp4">
             </video>
+            <div class="video-info">
+                <h3>Blog Platform</h3>
+                <p>
+                    Full-stack Flask blog with authentication, CRUD posts, and database integration.
+                </p>
+            </div>
         </div>
 
         <div id="home" class="video-card">
             <video controls>
                 <source src="/static/videos/Homeassistant_and_Docker.mp4">
             </video>
+            <div class="video-info">
+                <h3>Home Assistant Setup</h3>
+                <p>
+                    Dockerized Home Assistant deployment with service automation and system integration.
+                </p>
+            </div>
         </div>
+
         <div id="dash" class="video-card">
             <video controls>
                 <source src="/static/videos/Dashboard.mp4">
             </video>
+            <div class="video-info">
+                <h3>Dashboard</h3>
+                <p>
+                    Interactive dashboard with data visualization and structured UI layout for monitoring and analysis.
+                </p>
+            </div>
         </div>
         <div id="viz" class="video-card">
             <video controls>
                 <source src="/static/videos/Player.mp4">
             </video>
+            <div class="video-info">
+                <h3>Audio Visualizer</h3>
+                <p>
+                    Real-time audio visualization project with frequency-based animation and playback interaction.
+                </p>
+            </div>
         </div>
 
     </div>
-
-
+</section>
+<section id="experience" class="tab">
     <!-- DETAIL CARDS -->
     <h2>Work experience</h2>
     <div class="positions-list">
@@ -95,7 +116,6 @@
         </div>
 
     </div>
-    <hr class="separator">
     <div id="kanban" class="job-card">
         <h3>Material delivery on Kanban</h3>
         <ul>
@@ -106,7 +126,7 @@
         <h3>Quality Auditor</h3>
         <ul>
             <li>Training new operators</li>
-            <li>Testing operators for qualification and requalification</li>
+            <li>Testing operators for qualification and revaluation</li>
             <li>Conducting training plans related to quality control</li>
             <li>Conducting evolutionary training for new operators</li>
             <li>Approving assembly boards</li>
@@ -130,72 +150,79 @@
             <li>Supported software implementation for production line testing and commissioning</li>
         </ul>
     </div>
-    </div>
-    <hr>
-
 </section>
-<div class="skills">
+<section id="skills" class="tab">
+    <h2>Skills</h2>
+    <div class="cards-container">
 
-    <div class="skill-row">
-        <div class="courses-row">
-        <h2>Completed Courses</h2>
+        <!-- COURSES -->
+        <div class="card skill-card">
+            <h3>Completed Courses</h3>
+            <ul class="list">
+                <li>Object Oriented Programming in Python</li>
+                <li>Python Game Development (2D)</li>
+                <li>Databases & SQL Querying</li>
+                <li>Web Design (Beginner → Intermediate)</li>
+                <li>HTML / CSS From Scratch</li>
+                <li>Ubuntu Linux Basics</li>
+                <li>Powershell Functions</li>
+            </ul>
+        </div>
 
-        <ul style="text-align: left;">
-            <li>Object Oriented Programming in Python, Udemy</li>
-            <li>Python Game Development: Create a Complete 2D</li>
-            <li>Introduction to Databases and SQL Querying. Udemy</li>
-            <li>Web Design Course for Beginners to Intermediate</li>
-            <li>Web Development By Doing: HTML / CSS From Scratch</li>
-            <li>Ubuntu Linux for beginners, Udemy</li>
-            <li>Powershell Function Master class</li>
-        </ul>
-</div>
-        <hr>
-        <div class="courses">
-            <h2>Skills</h2>
-            <div class="courses-row">
-                <table cellspacing="10">
-                    <tbody>
-                    <tr>
-                        <td>Python Development</td>
-                        <td>⭐️⭐️⭐️⭐️</td>
-                    </tr>
-                    <tr>
-                        <td>Web Development</td>
-                        <td>⭐️⭐️⭐️⭐️</td>
-                    </tr>
-                    <tr>
-                        <td>SQL Programming</td>
-                        <td>⭐️⭐️⭐️⭐️</td>
-                    </tr>
-                    <tr>
-                        <td>Linux</td>
-                        <td>⭐️⭐️⭐️</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <hr>
-                <!-- SKILLS -->
-                <section class="skills">
-                    <div class="skills-container">
-                        <h2 class="skills-title">Soft Skills</h2>
-                        <div class="skills-grid">
-                            <div class="skill-tag">Problem-Solving</div>
-                            <div class="skill-tag">Attention to Detail</div>
-                            <div class="skill-tag">Training & Mentoring</div>
-                            <div class="skill-tag">Team Collaboration</div>
-                            <div class="skill-tag">Time Management</div>
-                            <div class="skill-tag">Adaptability</div>
-                        </div>
-                    </div>
-                </section>
+        <!-- TECH SKILLS -->
+        <div class="card skill-card">
+            <h3>Technical Skills</h3>
 
-                <!-- CONTACT -->
-                <footer class="footer">
-                    <a href="https://github.com/">GitHub</a>
-                    <a href="https://linkedin.com/">LinkedIn</a>
-                </footer>
-                <script>
+            <div class="skill-bar">
+                <span>Python</span>
+                <div class="bar">
+                    <div class="fill" style="width: 85%"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <span>Web Development</span>
+                <div class="bar">
+                    <div class="fill" style="width: 80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <span>SQL</span>
+                <div class="bar">
+                    <div class="fill" style="width: 75%"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <span>Linux</span>
+                <div class="bar">
+                    <div class="fill" style="width: 65%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOFT SKILLS -->
+        <div class="card skill-card">
+            <h3>Soft Skills</h3>
+            <div class="skill-tags">
+                <span>Problem Solving</span>
+                <span>Attention to Detail</span>
+                <span>Mentoring</span>
+                <span>Teamwork</span>
+                <span>Time Management</span>
+                <span>Adaptability</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- CONTACT -->
+<footer class="footer">
+    <a href="https://github.com/">GitHub</a>
+    <a href="https://linkedin.com/">LinkedIn</a>
+</footer>
+<script>
 const links = document.querySelectorAll('.job-link');
 const videos = document.querySelectorAll('.video-card');
 
@@ -231,8 +258,8 @@ links.forEach(link => {
 
 
 
-                </script>
-                <script>
+</script>
+<script>
 document.querySelectorAll('.job-link').forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();
@@ -253,6 +280,29 @@ document.querySelectorAll('.job-link').forEach(link => {
 
 
 
-                </script>
+</script>
+<script>
+    const buttons = document.querySelectorAll('.nav-btn');
+const tabs = document.querySelectorAll('.tab');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+
+    // buttons active state
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // tabs switch
+    tabs.forEach(t => t.classList.remove('active'));
+
+    const target = document.getElementById(btn.dataset.target);
+    if (target) target.classList.add('active');
+  });
+});
+
+
+
+</script>
+
 </body>
 </html>
