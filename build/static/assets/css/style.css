@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -31,14 +41,88 @@ video {
 
 .video-card {
   display: none;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 .video-card.active {
   display: block;
 }
 
+.video-card video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.video-info {
+  text-align: left;
+  padding-top: 10px;
+}
+
+.video-info h3 {
+  color: #17a2b8;
+  margin-bottom: 5px;
+}
+
+.video-info p {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .footer {
   cursor: pointer;
   padding: 10px;
   margin: 5px 0;
+}
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #0f0f0f;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.nav-btn {
+  background: #111;
+  color: #eaeaea;
+  border: 1px solid #222;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-btn.active {
+  border-color: #66BFBF;
+  color: #66BFBF;
+  background: #1a1a1a;
+}
+
+.tab {
+  padding: 40px 0;
+}
+
+.project-link,
+.job-link {
+  color: #17a2b8 !important;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.project-link:hover,
+.job-link:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
 }

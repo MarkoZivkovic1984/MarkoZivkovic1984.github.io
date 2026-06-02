@@ -17,6 +17,7 @@ def portfolio(name=None):
 
 if __name__ == "__main__":
     freezer.freeze()
+    # app.run(host="0.0.0.0",  debug=True)
 
 
 
