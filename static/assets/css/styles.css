@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+
 }
 body {
   color: #40514E;
@@ -8,6 +9,7 @@ body {
   font-family: 'Merriweather', serif;
   max-width: 100%;
   overflow-x: hidden;
+  max-height: 1100px;
   padding: 0;
   overflow-x: hidden;
 }
@@ -361,6 +363,23 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+    h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .container {
+    padding: 15px;
+  }
+}
   .position-row {
     display: flex;
     flex-direction: column;
